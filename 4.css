@@ -31,6 +31,174 @@ display: block;
 padding-top: 0;
 }
 
+.first_screen {
+background-image: url(img/header-bg.png);
+background-size: cover;
+background-position: center;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+color: white;
+position: relative;
+}
+
+.navigation {
+position: absolute;
+top: 0px;
+display: flex;
+align-self: center;
+}
+
+nav a {
+display: inline-block;
+min-width: 133px;
+min-height: 100px;
+border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+text-decoration: none;
+font-size: 12px;
+line-height: 100px;
+font-weight: 700;
+color: white;
+}
+
+nav a {
+display: inline-block;	
+margin-left: -2px;
+margin-right: -2px;
+}
+
+nav a:nth-child(4) {
+margin-right: 220px;
+}
+
+nav a:hover {
+background-color: #E8C300;
+border-bottom: 1px solid #E8C300;
+transition: background-color 0.5s, border-color 0.5s;
+}
+
+.wheel {
+margin-top: 25px;	
+margin-bottom: 123px;
+}
+
+.wheel img:hover {
+animation-name: rotation;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+@keyframes rotation {
+0% {
+transform: rotate(0deg);
+}
+100% {
+transform: rotate(360deg);
+}
+}
+
+.heading p {
+text-transform: uppercase;
+font-family: Open Sans;
+letter-spacing: 0.5em;
+font-size: 12px;
+line-height: 14px;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+h1 {
+font-family: Banny;
+font-weight: normal;
+font-style: normal;
+font-size: 96px;
+line-height: 96px;
+margin: 0 0 60px 0;
+text-transform: uppercase;
+position: relative;
+}
+
+h1::after {
+content: '';
+position: absolute;
+height: 5.11px;
+top: 115px;
+left: 50%;
+transform: translate(-50%);
+border: none;
+background-color: #E8C300;
+width: 60px;
+border-radius: 2px;
+}
+
+.buttons {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.buttons a:first-child {
+margin-right: 40px;
+}
+
+.button {
+min-width: 200px;
+min-height: 60px;
+border: 1px solid rgba(255, 255, 255, 0.5);
+border-radius: 5px;
+text-decoration: none;
+font-size: 12px;
+line-height: 60px;
+font-weight: 700;
+color: white;
+display: inline-block;
+}
+
+.button:hover {
+background-color: #E8C300;
+border-color: #E8C300;
+transition: background-color 0.5s, border-color 0.5s;
+}
+
+.socials {
+position: absolute;
+right: 80px;
+top: 43%;
+display: flex;
+flex-direction: column;
+}
+
+.socials a:not(:last-child) {
+margin-bottom: 20px;
+}
+
+.work_hours {
+position: absolute;
+font-size: 12px;
+line-height: 12px;
+left: 80px;
+top: 70%;
+transform: rotate(-90deg);
+transform-origin: left top 0;
+}
+
+.scroll {
+position: absolute;
+bottom: 60px;
+left: 50%;
+transform: translate(-50%);
+}
+
+.about {
+display: flex;
+justify-content: space-between;
+padding: 80px 10px 100px 80px;
+align-items: center;
+position: relative;
+}
+
 h2 {
 font-family: Banny;
 font-weight: normal;
